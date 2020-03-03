@@ -1,3 +1,3 @@
-# IBM-Hackathon
-Project for the IBM AI Hackathon
+# AI-Project
+Project for experimenting with AI 
 hehehe
