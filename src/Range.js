@@ -15,6 +15,17 @@ function valuetext(value) {
 
 export default function RangeSlider(props) {
 
+  const marks = [
+    {
+      value: 0,
+      label: props.firstLabel,
+    },
+    {
+      value: 100,
+      label: props.secondLabel,
+    },
+  ];
+
   const classes = useStyles();
   const [value, setValue] = React.useState([20, 37]);
 
@@ -33,6 +44,7 @@ export default function RangeSlider(props) {
         valueLabelDisplay="auto"
         aria-labelledby="range-slider"
         getAriaValueText={valuetext}
+        marks={marks}
       />
     </div>
   );
