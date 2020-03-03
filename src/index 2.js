@@ -7,8 +7,8 @@ import RangeSlider from "./Range";
 ReactDOM.render(
   <div>
     <Main/>
-    <Range name="Openness" firstLabel="inventive and curious" secondLabel="consistent and cautious"/>
-    <Range name="Conscientiousness" firstLabel="efficient and organized" secondLabel="easy-going and careless"/>
+    <Range name="Openness" firstLabel="consistent and cautious" secondLabel="inventive and curious"/>
+    <Range name="Conscientiousness" firstLabel="easy-going and careless" secondLabel="efficient and organized"/>
     <Range name="Extraversion" firstLabel="solitary and reserved" secondLabel="outgoing and energetic"/>
     <Range name="Agreeableness" firstLabel="challenging and detached" secondLabel="friendly and compassionate"/>
     <Range name="Neuroticism" firstLabel="secure and confident" secondLabel="sensitive and nervous"/>
