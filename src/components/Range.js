@@ -15,7 +15,7 @@ function valuetext(value) {
 
 export default function RangeSlider(props) {
 
-  const marks = [
+  const Marks = [
     {
       value: 0,
       label: props.firstLabel,
@@ -44,7 +44,7 @@ export default function RangeSlider(props) {
         valueLabelDisplay="auto"
         aria-labelledby="range-slider"
         getAriaValueText={valuetext}
-        marks={marks}
+        marks={Marks}
       />
     </div>
   );

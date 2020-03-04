@@ -3,7 +3,7 @@ import Range from "./components/Range";
 import Lottie from "react-lottie";
 import rabbitData from "./Animations/bunny.json"
 import {Container, Banner, Header, Button, LottieDiv} from "./App.components"
-
+import Results from "./components/Results";
 
 const bunnyLottie = {
   loop: true,
@@ -51,23 +51,23 @@ function App() {
           <div className="content">
           </div>
           <Range name="Openness" firstLabel="consistent and cautious" secondLabel="inventive and curious"/>
-    <Range name="Conscientiousness" firstLabel="easy-going and careless" secondLabel="efficient and organized"/>
+    <Range name="Conscientiousness" firstLabel="easy-going and careless" secondLabel="efficient and organized" onChange={() => setResults[this.Marks]}/>
+    {console.log(results)}
     <Range name="Extraversion" firstLabel="solitary and reserved" secondLabel="outgoing and energetic"/>
     <Range name="Agreeableness" firstLabel="challenging and detached" secondLabel="friendly and compassionate"/>
     <Range name="Neuroticism" firstLabel="secure and confident" secondLabel="sensitive and nervous"/>
     <Button
     style={{background: pressed ? "#c3acce" : "#ffdab9"}}
-    onMouseEnter={() => setPressed(!pressed)}
-    onMouseLeave={() => setPressed(!pressed)}
+    onClick={() => setPressed(!pressed)}
     >
       <text>search</text>
       </Button>
     </Container>
+    {pressed ?
     <Container>
-      {Dropdown(5)}
-
-      <Button/>
+      {Results(1, "jordan","6278399202", "2")}
     </Container>
+  : <div /> }
     </div>
   );
 }
