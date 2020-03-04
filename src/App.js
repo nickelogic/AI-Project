@@ -14,9 +14,19 @@ const bunnyLottie = {
   }
 };
 
+const Dropdown = (int) => {
+  let array = [];
+  for(let i = 0; i < int; i++) {
+    array.push(<Button/>)
+  }
+  return array;
+  }
+
 function App() {
   const [pressed, setPressed] = useState(0);
+  const [results, setResults] = useState([]);
   return (
+    <div>
     <Container className="App">
       <Banner>
         <LottieDiv>
@@ -53,6 +63,12 @@ function App() {
       <text>search</text>
       </Button>
     </Container>
+    <Container>
+      {Dropdown(5)}
+
+      <Button/>
+    </Container>
+    </div>
   );
 }
 
